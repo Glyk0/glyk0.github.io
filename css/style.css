@@ -1,0 +1,501 @@
+
+/* -----------------------------------page------------------------- */
+*, *::after, *::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: gray;
+}
+.page{
+    max-width: 1440px;
+    min-height: 8000px;
+    margin: 0 auto;
+    font-family: Baskerville, sans-serif;
+    background-color: #fefdfc;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* ---------------------------------header------------------------- */
+.header{
+    padding: 76px 64px 0 93px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.title{
+    font-family: Baskerville;
+    font-size: 66.7px;
+    font-weight: 400;
+    letter-spacing: 0.14em;
+    color: #cb9e61;
+}
+.subtitle{
+    margin: 27px 0 60px 0;
+    font-family: Baskerville;
+    font-size: 21.1px;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    color: #929496;
+}
+/* ----------------------------------menu------------------------------ */
+.menu__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.menu__link{
+    font-family: Montserrat;
+    font-size: 14.6px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #8c8c8c; 
+}
+.menu__list-input{
+    padding: 2px 0 2px 5px;
+    max-width: 241px;
+    min-height: 26px;
+    background-color: #ffffff;
+    border: 1px solid #8c8c8c;
+    font-family: Montserrat;
+    font-size: 12.3px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #8c8c8c;
+}
+.menu__link:hover{
+    text-decoration: underline;
+}
+.menu__link--fat{
+    font-weight: 700;
+}
+/* ----------------------------------registration--------------------- */
+.registration{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 58px 0 11px 0;
+  }
+.registration__title{
+    font-family: Baskerville;
+    font-size: 14.3px;
+    line-height: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+    color: #cb9e61;
+}
+.log-menu{
+    background:  url(../images/box1/box1_bgrd2.png) 488px -300px/100% no-repeat,
+    url(../images/box1/box1-bgrd1.png) 0 0/cover no-repeat;
+}
+.input{
+    max-width: 1283px;
+    height: 721px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 8px;
+    padding: 0 26px 59px 0;
+}
+.input__email{
+    padding: 10px;
+    font-family: Montserrat;
+    font-size: 7.6px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #8c8c8c;
+    width: 239px;
+    height: 31px;
+    background-color: #ffffff;
+    border: 1px solid #8c8c8c;
+}
+.input__btn{
+    font-family: Baskerville;
+    font-size: 19.2px;
+    font-weight: 400;
+    color: #ffffff;
+    width: 239px;
+    height: 31px;
+    background-color: #cb9e61;
+}
+.header::before{
+    content: '';
+    background: url(../images/box1/box1_bgrd3.png) no-repeat;
+    display: block;
+    width: 546px;
+    height: 453px;
+    position: absolute;
+    bottom: -210px;
+    right: 0;
+    z-index: -1;
+}
+/* -----------------------------------galery---------------------------- */
+.gallery{
+    padding: 39px 21% 0;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.gallery__title{
+    text-align: center;
+    margin: 39px 0 30px 0;
+    font-family: Baskerville;
+    font-size: 36.1px;
+    font-weight: 400;
+    color: #cb9e61;
+}
+.gallery__item{
+    display: flex; 
+    flex-direction: column;
+    gap: 20px;
+}
+.gallery__row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card{
+    flex: 0 0 230px;
+    position: relative;
+} 
+.card::after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-right: 5px solid white;
+    border-top: 5px solid white;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 50%;
+    right: 20px;
+}                  
+.card__text{
+    padding: 3px 3px;
+    text-align: center;
+    width: 230px;
+    min-height: 40px;
+    background-color: #8c8c8c;
+    font-family: Barlow;
+    font-size: 9.9px;
+    font-weight: 500;
+    color: #ffffff;
+}
+.picture{
+    width: 230px;
+    height: 234px;
+}
+.picture__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gallery-rest{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.gallery-text{
+    margin-top: 32px;
+    font-family: Barlow;
+    font-size: 9.9px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #8c8c8c;
+}
+/* ----------------------------------designer--------------------------- */
+.designer{
+    padding: 146px 142px 0 93px;
+    background: url(../images/box3/box3__bgrd.png) no-repeat;
+    background-position: 0 109px;
+    position: relative;
+}
+.picture_sz707{
+    width: 707px;
+    height: 386px;
+    position: absolute;
+    top: -60px;
+    left: 0;
+}
+.block{
+  display: flex;
+  justify-content: flex-end;
+}
+.about{ 
+    display: flex;
+    flex-direction: column;
+}
+.about__kyla{
+    margin-bottom: 75px;
+    font-family: Baskerville;
+    font-size: 35.5px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #cb9e61;
+}
+.about__renovate{
+    margin-bottom: 36px;
+    font-family: Baskerville;
+    font-size: 35.5px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #808183;
+}
+.about__renew{
+    text-align: center;
+    padding-top: 5px;
+    margin-bottom: 135px;
+    font-family: Baskerville;
+    font-size: 19.2px;
+    font-weight: 400;
+    color: #ffffff;
+    width: 237px;
+    height: 29px;
+    background-color: #cb9e61;
+}
+.about__phrase{
+    font-family: 'Black Jack';
+    font-size: 30.3px;
+    font-weight: 400;
+    color: #808183;
+}
+.picture_sz419{
+    width: 419px;
+    height: 392px;
+    margin: -215px 17% 0 auto;
+}
+/* -----------------------------------thenew---------------------- */
+.thenews{
+    padding: 0 58px 0 58px;
+    background: url(../images/thenews/news__bgrd1.png) no-repeat;
+    background-position: 0 37px;
+}
+.thenews__wrap{
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    gap: 64px;
+}
+.news-title{
+    padding: 226px 0 0 28%;
+}
+.news-title__h2{
+    font-family: Baskerville;
+    font-size: 35.5px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #cb9e61;
+}
+.span{
+    font-family: Baskerville;
+    font-size: 35.5px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #8c8c8c;
+    margin-bottom: 32px;
+}
+.input-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.input-menu__email{
+    width: 473px;
+    height: 41px;
+    background-color: #ffffff;
+    border: 2px solid #8c8c8c;
+}
+.input-menu__btn{
+    font-family: Baskerville;
+    font-size: 22.6px;
+    line-height: 25px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #ffffff;
+    width: 473px;
+    height: 41px;
+    background-color: #cb9e61;
+    margin-bottom: 19px;
+}
+.newsreg__text{
+    font-family: Barlow;
+    font-size: 14.5px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #808183;
+}
+.picture_sz448{
+    width: 448px;
+    height: 870px;
+}
+/* -------------------------arcade------------------------ */
+.arcade{
+    min-height: 830px;
+    background: url(../images/arcade/arcade__bgrd.png) no-repeat;
+    background-position: top 170px right 0;
+    position: relative;
+    z-index: 3;
+}
+.arcade__gallery::before {
+  content: '';
+  background: url(../images/arcade/arcade_cloud.png) no-repeat;
+  width: 975px;
+  height: 387px;
+  display: block;
+  right: 28%;
+  top: 0;
+  position: absolute;
+  z-index: 1;
+}
+/* .arcade::after {
+  content: '';
+  background: url(../images/arcade/arcade_pen.png) no-repeat;
+  background-position: bottom 150px left -50px;
+  width: 131px;
+  height: 266px;
+  display: block;
+} */
+.arcade__title{
+    text-align: center;
+    margin-top: 130px;
+    font-family: Baskerville;
+    font-size: 56.5px;
+    line-height: 69px;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    color: #cb9e61;
+    position: relative;
+    z-index: 3;
+}
+.arcade__gallery{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 7px;
+    padding-right: 4%;
+}
+.arcade-cart{
+    display: flex;
+    flex-direction: column;
+}
+.arcade-cart_pos343{
+    margin-top: 343px;
+}
+.arcade-cart__figure{
+    border: 1px solid #e0c39c;
+    width: 187px;
+    height: 20px;
+    background-color: #e0c39c;
+    margin-bottom: 7PX;
+    margin-left: 211px;
+}
+.picture_sz398{
+    width: 398px;
+    height: 265px;
+}
+.picture_sz518{
+    width: 519px;
+    height: 523px;
+}
+.picture_sz228{
+    width: 228px;
+    height: 230px;
+}
+.picture_pos63{
+    margin-top: 63px;
+}
+.picture__text{
+    padding-top: 10px;
+    text-align: center;
+    width: 398px;
+    min-height: 39px;
+    background-color: #8c8c8c;
+    font-family: Montserrat;
+    font-size: 16.7px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    color: #ffffff;
+ }
+ .picture__text_size{
+    width: 519px;
+    height: 39px;
+ }
+.arcade__text{
+    max-width: 400px;
+    font-family: Baskerville;
+    font-size: 33.4px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #cb9e61;
+    margin: 0 auto;
+    /* text-align: center; */
+    /* margin-top: -100px; */
+    /* display: inline-block; */
+}
+/* -------------------------------renovate------------------------------- */
+.renovate{
+    min-height: 695px;
+    padding: 188px 53px 0 9%;
+    border: 1px solid black;
+    background: url(../images/renovate/renovate__bgrd.png) no-repeat;
+    background-position: right 0 bottom 86px;
+    position: relative;
+}
+.renovate__wrap-text{
+    border: 1px solid red;
+    display: inline-block;
+   
+}
+.renovate__tittle{
+    font-family: Baskerville;
+    font-size: 35.5px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #cb9e61;
+    margin-bottom: 75px;
+}
+.renovate__text{
+    font-family: Baskerville;
+    font-size: 35.5px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #808183;
+    margin-bottom: 75px;
+}
+.renovate__phrase{
+    font-family: 'Black Jack';
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 400;
+    color: #808183;
+}
+.renovate__wrap-picture{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.picture_sz739{
+    width: 739px;
+    height: 532px;
+    border: 7px solid #ffffff;
+}
+.picture_sz338{
+    width: 338px;
+    height: 228px;
+    border: 7px solid #ffffff;
+}

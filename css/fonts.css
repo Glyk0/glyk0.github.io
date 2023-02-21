@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Black Jack';
+    src: url(../fonts/Black-Jack.woff2) format('wwoff2'),
+         url(../fonts/Black-Jack.ttf) format('truetype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'LibreBaskerville';
+    src: url(../fonts/LibreBaskerville-Regular.woff2) format('wwoff2'),
+         url(../fonts/LibreBaskerville-Regular.ttf) format('truetype');
+     font-weight: 400;
+}
+@font-face {
+    font-family: 'Barlow';
+    src: url(../fonts/Barlow-Medium.woff2) format('wwoff2'),
+         url(../fonts/Barlow-Medium.ttf) format('truetype');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat-Bold.woff2) format('wwoff2'),
+         url(../fonts/Montserrat-Bold.ttf) format('truetype');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat-Medium.woff2) format('wwoff2'),
+         url(../fonts/Montserrat-Medium.ttf) format('truetype');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat-Regular.woff2) format('wwoff2'),
+         url(../fonts/Montserrat-Regular.ttf) format('truetype');
+    font-weight: 400;
+}
