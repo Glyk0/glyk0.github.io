@@ -10,7 +10,7 @@ body{
 }
 .page{
     max-width: 1440px;
-    min-height: 8000px;
+    min-height: 8150px;
     margin: 0 auto;
     font-family: Baskerville, sans-serif;
     background-color: #fefdfc;
@@ -290,17 +290,17 @@ a{
     flex-wrap: wrap;
     gap: 64px;
 }
-.news-title{
-    padding: 226px 0 0 28%;
+.wrap{
+    margin-top: 266px;
 }
-.news-title__h2{
+.title-wrap__h2{
     font-family: Baskerville;
     font-size: 35.5px;
     line-height: 1.2;
     font-weight: 400;
     color: #cb9e61;
 }
-.span{
+.title-wrap__span{
     font-family: Baskerville;
     font-size: 35.5px;
     line-height: 1.2;
@@ -314,7 +314,7 @@ a{
     gap: 10px;
 }
 .input-menu__email{
-    width: 473px;
+    width: 100%;
     height: 41px;
     background-color: #ffffff;
     border: 2px solid #8c8c8c;
@@ -332,7 +332,7 @@ a{
     background-color: #cb9e61;
     margin-bottom: 19px;
 }
-.newsreg__text{
+.news__text{
     font-family: Barlow;
     font-size: 14.5px;
     line-height: 1.2;
@@ -345,7 +345,7 @@ a{
 }
 /* -------------------------arcade------------------------ */
 .arcade{
-    min-height: 830px;
+    min-height: 760px;
     background: url(../images/arcade/arcade__bgrd.png) no-repeat;
     background-position: top 170px right 0;
     position: relative;
@@ -362,14 +362,6 @@ a{
   position: absolute;
   z-index: 1;
 }
-/* .arcade::after {
-  content: '';
-  background: url(../images/arcade/arcade_pen.png) no-repeat;
-  background-position: bottom 150px left -50px;
-  width: 131px;
-  height: 266px;
-  display: block;
-} */
 .arcade__title{
     text-align: center;
     margin-top: 130px;
@@ -442,23 +434,23 @@ a{
     line-height: 1.2;
     font-weight: 400;
     color: #cb9e61;
-    margin: 0 auto;
-    /* text-align: center; */
-    /* margin-top: -100px; */
-    /* display: inline-block; */
+    margin: -70px auto;
 }
 /* -------------------------------renovate------------------------------- */
 .renovate{
-    min-height: 695px;
+    min-height: 858px;
     padding: 188px 53px 0 9%;
-    border: 1px solid black;
     background: url(../images/renovate/renovate__bgrd.png) no-repeat;
-    background-position: right 0 bottom 86px;
+    background-position: right 0 bottom 90px;
     position: relative;
 }
 .renovate__wrap-text{
-    border: 1px solid red;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 75px;
+    position: absolute;
+    z-index: 5;
    
 }
 .renovate__tittle{
@@ -467,7 +459,6 @@ a{
     line-height: 1.2;
     font-weight: 400;
     color: #cb9e61;
-    margin-bottom: 75px;
 }
 .renovate__text{
     font-family: Baskerville;
@@ -475,7 +466,6 @@ a{
     line-height: 1.2;
     font-weight: 400;
     color: #808183;
-    margin-bottom: 75px;
 }
 .renovate__phrase{
     font-family: 'Black Jack';
@@ -486,16 +476,279 @@ a{
 }
 .renovate__wrap-picture{
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: 249px;
+    top: 151px;
+    z-index: 4;
 }
 .picture_sz739{
     width: 739px;
     height: 532px;
     border: 7px solid #ffffff;
+    position: relative;
 }
 .picture_sz338{
     width: 338px;
     height: 228px;
     border: 7px solid #ffffff;
+    position: absolute;
+    top: 476px;
+    right: 79px;
+}
+.renovate__wrap-picture::after{
+    content: '';
+    background: url(../images/renovate/renovate__plant.png) no-repeat;
+    position: absolute;
+    left: 0;
+    top: 362px;
+    width: 193px;
+    height: 283px;
+    display: block;
+}
+.renovate__figura{
+    width: 51px;
+    height: 171px;
+    background-color: #e0c39c;
+    display: block;
+    position: absolute;
+    top: 12px;
+    right: -53px;
+}
+.picture__span{
+    width: 38px;
+    height: 38px;
+    background-color: #daccb6;
+    border: 3px solid #ffffff;
+    border-radius: 16.2px;
+    position: absolute;
+    top: 260px;
+    right: -9px;
+}
+.picture__span::before{
+    content: '';
+    width: 38px;
+    height: 38px;
+    background-color: #cca77c;
+    border: 3px solid #ffffff;
+    border-radius: 16.2px;
+    position: absolute;
+    top: -48px;
+    right: -2px;
+}
+.picture__span::after{
+    content: '';
+    width: 38px;
+    height: 38px;
+    background-color: #8d8b8a;
+    border: 3px solid #ffffff;
+    border-radius: 16.2px;
+    position: absolute;
+    top: 44px;
+    left: -1px;
+}
+/* ----------------------------gift-table--------------------------- */
+.gift-table{
+    min-height: 974px;
+    background: url(../images/gift-table/gift_table__bgrd.png) no-repeat;
+    background-position: bottom 0 right 0;
+    margin: 47px 60px 0 88px;
+    position: relative;
+    z-index: 3;
+}
+.gift-table::before{
+    content: '';
+    background: url(../images/gift-table/gift_table__cloud.png) no-repeat,url(../images/gift-table/gift_table__cloud_2.png) no-repeat;
+    background-position: top -115px left -85px,top -115px left 254px;
+    display: block;
+    width: 965px;
+    height: 397px;
+    position: absolute;
+    z-index: 2;
+}
+.picture_sz1292 {
+    width: 1292px;
+    height: 881px;
+}
+.gift-table__title{
+    text-align: center;
+    font-family: Baskerville;
+    font-size: 35.5px;
+    line-height: 1.2;
+    font-weight: 400; 
+    color: #cb9e61;
+    position: absolute;
+    top: 55px;
+    right: 26%;
+    z-index: 4;
+}
+.input-menu_pos{
+    padding: 57px 38px 43px;
+    width: 544px;
+    height: 351px;
+    opacity: 0.81;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 266px;
+    right: 28%;
+}
+.input-menu__cell{
+    font-family: Montserrat;
+    font-size: 10.9px;
+    font-weight: 400;
+    line-height: 11px;
+    color: #808183;
+    padding-left: 18px;
+    width: 455px;
+    height: 37px;
+    background-color: #ffffff;
+    border: 1px solid #8c8c8c;
+}
+.input-menu__btn_sz455{
+    width: 454px;
+    height: 35px;
+    background-color: #cb9e61;
+}
+/* -------------------------------discounts------------------------ */
+.discounts{
+    padding: 0 116px 0 88px;
+    background: url(../images/discounts/discounts__bgrd.png) no-repeat;
+    background-position: top -60px right 0;
+    position: relative;
+}
+.discounts__pictures-wrap{
+    display: inline-block ;
+}
+.picture_sz608{
+    width: 608px;
+    height: 852px;
+    position: relative;
+}
+.picture_sz509{
+    width: 509px;
+    height: 341px;
+    border: 7px solid #ffffff;
+    position: absolute;
+    top: 53px;
+    left: 42%;
+}
+.picture_324{
+    width: 324px;
+    height: 216px;
+    position: absolute;
+    top: 392px; 
+    left: 49%;
+}
+.discounts__figura{
+    width: 66px;
+    height: 233px;
+    background-color: #e0c39c;
+    position: absolute;
+    bottom: 4px;
+    left: 49%;
+}
+.discounts__text-wrap{
+    display: flex;
+    justify-content: flex-end;
+    font-family: Baskerville;
+    color: #cb9e61;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 7%;
+}
+.text-wrap{
+    display: flex;
+    flex-direction: column;
+}
+.discounts__title{
+    font-size: 185.1px;
+    line-height: 226px;
+    font-weight: 400;
+    letter-spacing: -0.04em;
+    color: #cb9e61;
+}
+.text-wrap__hours{
+    font-size: 64.2px;
+    line-height: 78px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+}
+.text-wrap__discounts{
+    font-size: 39.2px;
+    line-height: 44px;
+    font-weight: 400;
+}
+/* --------------------------------footer--------------------------- */
+.footer{
+    background: #999999;
+    max-width: 1326px;
+    height: 525px;
+    margin: 57px 57px;
+    padding: 139px 4% 128px 16%;
+}
+.footer__wrap{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.menu__list_position{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+.menu__link_color{
+    color: white;
+}
+.title-wrap__h2_style{
+    font-family: Baskerville;
+    font-size: 23.4px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #ffffff;
+}
+.title-wrap__span_style{
+    font-family: Baskerville;
+    font-size: 23.4px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #ffffff;
+}
+.input-menu__email_size{
+    width: 313px;
+    height: 28px;
+}
+.input-menu__btn_size{
+    width: 309px;
+    height: 24px;
+    font-size: 14.9px;
+}
+.news__text_style{
+    color: #ffffff;
+    font-size: 9.6px;
+    line-height: 1.2;
+    font-weight: 500;
+}
+.phrasa__solitions{
+    font-family: Baskerville;
+    font-size: 15.9px;
+    line-height: 19px;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    color: #ffffff;
+}
+.phrasa__home{
+    font-family: Baskerville;
+    font-size: 57.4px;
+    line-height: 70px;
+    font-weight: 400;
+    letter-spacing: 0.14em;
+    color: #ffffff;
+    margin-bottom: 56px;
+}
+.phrasa__sweet{
+    font-family: 'Black Jack';
+    font-size: 30.4px;
+    line-height: 37px;
+    font-weight: 400;
+    color: #ffffff;
 }
